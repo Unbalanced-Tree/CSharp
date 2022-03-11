@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/MediatRProject/.vs/MediatRProject/DesignTimeBuild
+/MediatRProject/.vs/MediatRProject/v17
+/MediatRProject/MediatRProject/bin/Debug/net6.0
+/MediatRProject/MediatRProject/obj
+/MediatRProject/MediatRProject/MediatRProject.csproj.user
