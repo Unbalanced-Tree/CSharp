@@ -1,0 +1,9 @@
+version : '3'
+services: # Services to deploy
+  
+  dockerapp:
+    image: dockerapp #image name, Default:- Folder Name
+    build:
+      dockerfile : WebApiWithDocker\Dockerfile # path to Dockerfile
+    ports:
+      - "3500:80" # HOST_PORT:CONTAINER_PORT
