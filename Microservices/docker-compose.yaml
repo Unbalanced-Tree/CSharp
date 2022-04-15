@@ -1,0 +1,50 @@
+version : '3'
+services:
+  ############################
+  # serviceone app + Dapr sidecar
+  ############################
+  serviceoneapp:
+    image: serviceoneapp
+    build: 
+      context: .
+      dockerfile: serviceOne/serviceOne/Dockerfile
+    ports:
+      - "3500:3500" # HOST_PORT:CONTAINER_PORT
+      
+  serviceoneapp-dapr:
+    image: "daprio/daprd:edge"
+    command: ["./daprd",
+    "-app-id", "serviceoneapp",
+    "-app-port", "80", # Same as Expose port of Dockerfile of the respective service
+    "-components-path", "/components",
+    "-log-level", "debug"]
+    volumes:
+      - "./components/:/components"
+    
+    depends_on:
+      - serviceoneapp
+    network_mode: "service:serviceoneapp"
+
+  ############################
+  # ServiceTwo app + Dapr sidecar
+  ############################
+  servicetwoapp:
+    image: servicetwoapp
+    build:
+      context: .
+      dockerfile: ServiceTwo/ServiceTwo/Dockerfile
+    ports:
+      - "3501:3501"
+      
+  servicetwoapp-dapr:
+    image: "daprio/daprd:edge"
+    command: ["./daprd",
+    "-app-id", "servicetwoapp",
+    "-app-port", "80",
+    "-components-path", "/components",
+    "-log-level", "debug"]
+    volumes:
+      - "./components/:/components"
+    depends_on:
+      - servicetwoapp
+    network_mode: "service:servicetwoapp"

@@ -13,3 +13,9 @@
 /WebApiWithDocker/.vs/WebApiWithDocker/config
 /WebApiWithDocker/.vs/WebApiWithDocker/DesignTimeBuild
 /WebApiWithDocker/WebApiWithDocker/bin/Debug/net6.0
+/Microservices/ServiceOne/.vs/ServiceOne
+/Microservices/ServiceOne/ServiceOne/bin/Debug/net5.0
+/Microservices/ServiceOne/ServiceOne/obj
+/Microservices/ServiceTwo/.vs/ServiceTwo
+/Microservices/ServiceTwo/ServiceTwo/bin/Debug/net5.0
+/Microservices/ServiceTwo/ServiceTwo/obj
