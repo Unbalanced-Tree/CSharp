@@ -19,3 +19,6 @@
 /Microservices/ServiceTwo/.vs/ServiceTwo
 /Microservices/ServiceTwo/ServiceTwo/bin/Debug/net5.0
 /Microservices/ServiceTwo/ServiceTwo/obj
+/InMemoryDb/.vs/InMemoryDb
+/InMemoryDb/InMemoryDb/bin/Debug/net5.0
+/InMemoryDb/InMemoryDb/obj
