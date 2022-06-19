@@ -48,3 +48,9 @@ services:
     depends_on:
       - servicetwoapp
     network_mode: "service:servicetwoapp"
+    
+  redis:
+    image: "redis:alpine"
+    hostname: redisstate
+    ports:
+      - "6379:6379"

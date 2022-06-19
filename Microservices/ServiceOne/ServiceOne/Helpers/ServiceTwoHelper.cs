@@ -17,5 +17,10 @@ namespace ServiceOne.Helpers
             var response = await _daprClientHelper.ResponseByDaprClient<string>(HttpMethod.Get, "servicetwoapp", "/Home/GetMessage");
             return response;
         }
+
+        public async Task<bool> PublishMessageTopic(int number)
+        {
+            return await _daprClientHelper.PublishToTopicWithDaprClient("pubsub", "publishmessage", new { Number = number });
+        }
     }
 }

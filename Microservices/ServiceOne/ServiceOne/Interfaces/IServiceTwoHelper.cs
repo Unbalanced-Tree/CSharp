@@ -4,6 +4,8 @@ namespace ServiceOne.Interfaces
 {
     public interface IServiceTwoHelper
     {
-       Task<string> GetMessage();
+        Task<string> GetMessage();
+        Task<bool> PublishMessageTopic(int number);
+
     }
 }

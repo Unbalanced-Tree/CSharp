@@ -20,5 +20,17 @@ namespace ServiceOne.Controllers
             var serviceTwoResponse = await _serviceTwoHelper.GetMessage();    
             return new JsonResult($"Contact with ServiceOne   {serviceTwoResponse}");
         }
+
+        [HttpGet]
+        [Route("PublishMessage/{number}")]
+        public async Task<ActionResult<string>> PublishMessage(int number)
+        {
+            var isPublished = await _serviceTwoHelper.PublishMessageTopic(number);
+            if(isPublished)
+            {
+                return new JsonResult("Message published");
+            }
+            return new JsonResult("Failed");
+        }
     }
 }

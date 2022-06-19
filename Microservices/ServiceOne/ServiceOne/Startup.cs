@@ -45,7 +45,7 @@ namespace ServiceOne
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseCloudEvents();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
