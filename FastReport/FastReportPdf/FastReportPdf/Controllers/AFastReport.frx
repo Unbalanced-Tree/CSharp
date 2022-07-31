@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="07/17/2022 14:02:42" ReportInfo.Modified="07/18/2022 22:35:30" ReportInfo.CreatorVersion="2022.2.15.0">
+  <Dictionary>
+    <BusinessObjectDataSource Name="ResponseData" ReferenceName="ResponseData" DataType="System.Collections.Generic.List`1[[FastReportPdf.Models.ResponseDataModel, FastReportDesigner, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" Enabled="true">
+      <Column Name="Header" DataType="System.String"/>
+      <Column Name="Footer" DataType="System.String"/>
+      <Column Name="Content" DataType="System.String"/>
+      <BusinessObjectDataSource Name="Collection" DataType="System.Collections.Generic.List`1[[FastReportPdf.Models.OneMoreDataModel, FastReportDesigner, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" Enabled="true">
+        <Column Name="Number" DataType="System.Int32"/>
+      </BusinessObjectDataSource>
+    </BusinessObjectDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8">
+      <TextObject Name="Text1" Left="18.9" Top="9.45" Width="378" Height="18.9" Text="FastReport Title" Font="Arial, 10pt"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="40.47" Width="718.2" Height="28.35">
+      <TextObject Name="Text2" Left="18.9" Width="378" Height="18.9" Text="[ResponseData.Header]" Font="Arial, 10pt"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="71.48" Width="718.2" Height="75.6">
+      <TextObject Name="Text3" Left="18.9" Width="378" Height="18.9" Text="[ResponseData.Content]" Font="Arial, 10pt"/>
+      <DataBand Name="Data2" Top="149.75" Width="718.2" Height="37.8" DataSource="Collection">
+        <TextObject Name="Text5" Left="18.9" Width="378" Height="18.9" Text="[ResponseData.Collection.Number]" Font="Arial, 10pt"/>
+      </DataBand>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="190.22" Width="718.2" Height="18.9">
+      <TextObject Name="Text4" Left="18.9" Width="378" Height="18.9" Text="[ResponseData.Footer]" Font="Arial, 10pt"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

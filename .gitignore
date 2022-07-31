@@ -22,3 +22,10 @@
 /InMemoryDb/.vs/InMemoryDb
 /InMemoryDb/InMemoryDb/bin/Debug/net5.0
 /InMemoryDb/InMemoryDb/obj
+/FastReport/FastReportDesigner/.vs/FastReportDesigner
+/FastReport/FastReportDesigner/FastReportDesigner/bin/Debug/net6.0-windows
+/FastReport/FastReportDesigner/FastReportDesigner/obj
+/FastReport/FastReportPdf/.vs/FastReportPdf/v17
+/FastReport/FastReportPdf/FastReportPdf/bin/Debug/net6.0
+/FastReport/FastReportPdf/FastReportPdf/obj
+/FastReport/FastReportPdf/.vs/FastReportPdf/DesignTimeBuild
