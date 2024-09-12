@@ -35,3 +35,7 @@
 /XUnitTesting/Application.Test/obj
 /XUnitTesting/XUnitTesting/bin/Debug/net6.0
 /XUnitTesting/XUnitTesting/obj
+/GraphQL/ChocolateServer/.vs
+/GraphQL/ChocolateServer/ChocolateServer/bin/Debug/net8.0
+/GraphQL/ChocolateServer/ChocolateServer/obj
+/GraphQL/ChocolateServer/ChocolateServer/appsettings.Local.json

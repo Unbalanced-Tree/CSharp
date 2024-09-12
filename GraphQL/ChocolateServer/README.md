@@ -1,0 +1,1 @@
+GraphQL Server Side with [Hot Chocolate](https://chillicream.com/docs/hotchocolate/v13)

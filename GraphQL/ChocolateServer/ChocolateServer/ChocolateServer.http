@@ -1,0 +1,6 @@
+@ChocolateServer_HostAddress = http://localhost:5094
+
+GET {{ChocolateServer_HostAddress}}/graphql/
+Accept: application/json
+
+###
