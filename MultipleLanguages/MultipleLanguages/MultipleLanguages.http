@@ -1,0 +1,6 @@
+@MultipleLanguages_HostAddress = http://localhost:5015
+
+GET {{MultipleLanguages_HostAddress}}/GetMessage/
+Accept: application/json
+
+###
