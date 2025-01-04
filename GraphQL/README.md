@@ -1,0 +1,1 @@
+This project implements GraphQL APIs with [Hot Chocolate](https://chillicream.com/docs/hotchocolate/v13). I also used micro ORM [Dapper](https://www.learndapper.com/). Both Hot Chocolate and Dapper are open source. 

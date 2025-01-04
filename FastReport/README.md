@@ -1,0 +1,1 @@
+Introduction to FastReport with C#. [Blog](https://dev.to/unbalanced-tree/introduction-to-fastreport-with-c-df6)
